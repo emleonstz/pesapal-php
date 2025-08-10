@@ -77,5 +77,7 @@ Always:
 
 ---
 
-This unofficial SDK is maintained by the open source community. Pesapal Limited is not responsible for this implementation.
+This unofficial SDK is maintained by [emleonstz](https://github.com/emleonstz) as an open source project.  
+Pesapal is not responsible for this implementation.
+
 
