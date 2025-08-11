@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE.md)
 [![PHP Version](https://img.shields.io/packagist/php-v/emleons/pesapal-php.svg?style=flat-square)](https://php.net)
 
-> **Official Pesapal API Documentation**: [https://developer.pesapal.com/](https://developer.pesapal.com/)
+> **Please Check the Official Pesapal API Documentation**: [https://developer.pesapal.com/](https://developer.pesapal.com/)
 
 A modern PHP wrapper for the Pesapal v3 API, providing easy integration with Pesapal's payment services. This SDK implements all core API endpoints with PHP best practices.
 
