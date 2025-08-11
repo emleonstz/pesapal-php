@@ -1,7 +1,7 @@
 # Pesapal PHP SDK
 
 [![Latest Version](https://img.shields.io/packagist/v/emleons/pesapal-php.svg?style=flat-square)](https://packagist.org/packages/emleons/pesapal-php)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE.md)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
 [![PHP Version](https://img.shields.io/packagist/php-v/emleons/pesapal-php.svg?style=flat-square)](https://php.net)
 
 > **Please Check the Official Pesapal API Documentation**: [https://developer.pesapal.com/](https://developer.pesapal.com/)
