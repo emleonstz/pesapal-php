@@ -14,7 +14,7 @@ A modern PHP wrapper for the Pesapal v3 API, providing easy integration with Pes
 - **Automatic Token Handling**: OAuth tokens managed automatically
 - **Sandbox Support**: Built-in sandbox mode for testing
 - **Strict Typing**: PHP 7.4+ type declarations for reliability
-- **PSR Standards**: Composer-ready and framework-agnostic
+- **PSR Standards**: Works with most php FrameWork Laravel, Codeigniter 4, Symfony ..
 
 ## Installation
 
