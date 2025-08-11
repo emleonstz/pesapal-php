@@ -39,15 +39,35 @@ $ipnResponse = $pesa->registerIpnUrl(
     'POST'
 );
 
+
+
 // Submit payment
-$payment = $pesa->makeThePayment([
-    'id' => 'ORDER-'.uniqid(),
-    'currency' => 'KES',
-    'amount' => 2500,
-    'description' => 'Online Purchase',
-    'callback_url' => 'https://yourdomain.com/callback',
-    // ... other required fields
-]);
+$payment = $pesa->makeThePayment(
+    [
+    "id" => $randomString,
+    "currency" => "TZS",
+    "amount" => 10000.00,
+    "description" => "Payment description goes here",
+    "callback_url" => "http://localhost:8080/pesapal/pin.php",
+    "redirect_mode" => "",
+    "notification_id" => "030bf9b0-a5d7-4cbd-b5cb-dbb88f03b75e",
+    "branch" => "Store Name - HQ",
+    "billing_address" => [
+        "email_address" => "john.doe@example.com",
+        "phone_number" => "0723xxxxxx",
+        "country_code" => "KE",
+        "first_name" => "John",
+        "middle_name" => "",
+        "last_name" => "Doe",
+        "line_1" => "Pesapal Limited",
+        "line_2" => "",
+        "city" => "",
+        "state" => "",
+        "postal_code" => "",
+        "zip_code" => ""
+    ]
+]
+);
 ```
 
 ## Official API Reference
@@ -56,21 +76,19 @@ For complete API specifications and required parameters, always refer to the:
 👉 [Official Pesapal API Documentation](https://developer.pesapal.com/api3-docs)
 
 Particularly useful sections:
-- [Authentication](https://developer.pesapal.com/api3-docs/api-reference/authentication)
-- [IPN Registration](https://developer.pesapal.com/api3-docs/api-reference/ipn)
-- [Order Submission](https://developer.pesapal.com/api3-docs/api-reference/submit-order-request)
-- [Status Checking](https://developer.pesapal.com/api3-docs/api-reference/query-order-status)
+- [Authentication](https://developer.pesapal.com/how-to-integrate/e-commerce/api-30-json/authentication)
+- [IPN Registration](https://developer.pesapal.com/how-to-integrate/e-commerce/api-30-json/registeripnurl)
+- [Order Submission](https://developer.pesapal.com/how-to-integrate/e-commerce/api-30-json/submitorderrequest)
+- [Status Checking](https://developer.pesapal.com/how-to-integrate/e-commerce/api-30-json/gettransactionstatus)
 
 ## Testing with Sandbox
 
 1. Get sandbox credentials from [Pesapal Developer Portal](https://developer.pesapal.com/)
 2. Set `is_sandbox => true`
-3. Use test card numbers from Pesapal's documentation
 
 ## Security Notice
 
 Always:
-- Keep credentials secure (never commit to version control)
 - Validate all user inputs before API calls
 - Use HTTPS for all callbacks
 - Regularly check [Pesapal's security advisories](https://developer.pesapal.com/)
