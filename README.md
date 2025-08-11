@@ -8,7 +8,7 @@
 
 A modern PHP wrapper for the Pesapal v3 API, providing easy integration with Pesapal's payment services. This SDK implements all core API endpoints with PHP best practices.
 
-## Key Features
+## Features
 
 - **Complete API Coverage**: All essential [Pesapal API v3 endpoints](https://developer.pesapal.com/api3-docs) implemented
 - **Automatic Token Handling**: OAuth tokens managed automatically
