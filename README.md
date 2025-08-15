@@ -69,7 +69,7 @@ $payment = $pesa->makeThePayment(
 ]
 );
 
-// Get More Methods from Pesa classs
+// Get More Methods from Pesa class
 ```
 
 ## Official API Reference
