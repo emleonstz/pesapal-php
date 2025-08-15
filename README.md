@@ -91,7 +91,7 @@ Particularly useful sections:
 Always:
 - Validate all user inputs before API calls
 - Use HTTPS for all callbacks
-- Regularly check [Pesapal's security advisories](https://developer.pesapal.com/)
+- Regularly check [Pesapal's security advisories](https://www.pesapal.com/security)
 
 ---
 
