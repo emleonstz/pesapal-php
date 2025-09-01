@@ -5,8 +5,8 @@ require 'vendor/autoload.php';
 header('Content-Type: application/json');
 
 $pesa = new \Emleons\PesapalPhp\Pesa([
-    'consumer_key' => 'ngW+UEcnDhltUc5fxPfrCD987xMh3Lx8',
-    'consumer_secret' => 'q27RChYs5UkypdcNYKzuUw460Dg=',
+    'consumer_key' => 'abcd',
+    'consumer_secret' => 'efg=',
     'is_sandbox' => true, // Set to false for live environment
 ]);
 
